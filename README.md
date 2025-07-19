@@ -1,102 +1,62 @@
- Insurance Platform
-A dynamic, user-centric insurance platform for both customers and insurance companies. This platform enables customers to calculate their prominence score, receive personalized policy recommendations, and purchase insurance policies. Insurance companies can manage policies, track sales, and gain insights into customer data.
+# 🛡️ Insurance Platform
 
-✨ Features
-👤 For Customers
-🔐 User Authentication: Secure login and registration
-📊 Prominence Calculation: Calculate your prominence score based on various factors
-🧠 Policy Recommendations: Get suggestions based on your prominence score
-💬 Chatbot Assistance: Ask questions and get policy-related help
-🛍️ Policy Purchase: Purchase policies using different payment methods
-📈 Activity Tracking: View your actions and transaction history
-🧾 User Dashboard: See active policies, score, and recent activities
-🏢 For Companies
-🔐 Company Authentication: Secure login for insurance providers
-🛠️ Policy Management: Create, edit, and delete insurance policies
-📂 Customer Insights: View data about policyholders
-📊 Sales Analytics: Track sales, revenue, and user distributions
-📋 Company Dashboard: Access charts and statistics
-🛠️ Tech Stack
-🌐 Frontend
-React – UI Library
-TypeScript – Type-safe JavaScript
-Tailwind CSS – Utility-first CSS framework
-React Router – Page navigation
-Shadcn UI – Component library
-React Query – Server-state management
-React Hook Form – Form handling
-Zod – Form validation
-🔧 Backend
-Node.js + Express – Backend framework
-MongoDB + Mongoose – NoSQL database & ODM
-JWT – Authentication tokens
-bcrypt – Password hashing
-📁 Project Structure
+A dynamic, user-centric insurance platform for both customers and insurance companies. This platform enables customers to calculate their **prominence score**, receive personalized policy recommendations, and purchase insurance policies. Meanwhile, insurance companies can manage policies, track sales, and gain insights into customer behavior.
+
+---
+
+## ✨ Features
+
+### 👤 For Customers
+- 🔐 **User Authentication**: Secure login and registration
+- 📊 **Prominence Calculation**: Calculate your score based on personal and financial details
+- 🧠 **Policy Recommendations**: Personalized suggestions based on your prominence score
+- 💬 **Chatbot Assistance**: Ask questions and get help with policies
+- 🛍️ **Policy Purchase**: Buy insurance with multiple payment methods
+- 📈 **Activity Tracking**: View actions, transactions, and history
+- 🧾 **User Dashboard**: Access active policies, scores, and recent activity
+
+### 🏢 For Insurance Companies
+- 🔐 **Company Authentication**: Secure login for providers
+- 🛠️ **Policy Management**: Create, edit, and remove insurance products
+- 📂 **Customer Insights**: Analyze policyholder data and trends
+- 📊 **Sales Analytics**: Monitor revenue and distribution metrics
+- 📋 **Company Dashboard**: Visual stats and management tools
+
+---
+
+## 🛠️ Tech Stack
+
+### 🌐 Frontend
+- **React** – UI Library
+- **TypeScript** – Type-safe JavaScript
+- **Tailwind CSS** – Utility-first styling
+- **React Router** – Routing and navigation
+- **Shadcn UI** – Beautiful component library
+- **React Query** – Server-state management
+- **React Hook Form + Zod** – Form handling & validation
+
+### 🔧 Backend
+- **Node.js + Express** – RESTful API backend
+- **MongoDB + Mongoose** – NoSQL database and ODM
+- **JWT** – JSON Web Token authentication
+- **bcrypt** – Secure password hashing
+
+---
+
+## 📁 Project Structure
+
+```plaintext
 insurance/
 ├── frontend/               # React frontend
 │   ├── components/         # UI components
-│   ├── pages/              # Page routes
+│   ├── pages/              # Route pages
 │   ├── hooks/              # Custom hooks
-│   ├── context/            # Context providers
-│   └── assets/             # Static assets
-├── backend/                # Node.js/Express API
+│   ├── context/            # Global state/context
+│   └── assets/             # Images, logos, icons
+├── backend/                # Node.js API
 │   ├── models/             # Mongoose schemas
-│   ├── routes/             # API endpoints
+│   ├── routes/             # REST API endpoints
 │   ├── services/           # Business logic
-│   └── utils/              # Helper functions
-└── shared/                 # Shared code
-    └── types/              # TypeScript interfaces
-🚀 Getting Started
-✅ Prerequisites
-Node.js (v14+)
-MongoDB (local or Atlas)
-npm or yarn
-🔌 Backend Setup
-cd backend
-npm install
-Create a .env file with:
-
-PORT=5000
-MONGODB_URI=mongodb://localhost:27017/insurance-platform
-JWT_SECRET=your-super-secret-jwt-key-change-in-production
-NODE_ENV=development
-Start the backend:
-
-npm run dev
-🌐 Frontend Setup
-cd frontend
-npm install
-npm run dev
-Open in browser: http://localhost:8080
-
-📦 Deployment
-Backend:
-Can be hosted on:
-
-Heroku
-Render
-DigitalOcean
-Railway
-Frontend:
-Recommended platforms:
-
-Vercel
-Netlify
-GitHub Pages (with build)
-🔄 User Flows
-🧍‍♂️ Customer
-Register/Login
-Calculate Prominence Score
-View Personalized Policy Recommendations
-Interact with Chatbot
-Purchase Policy
-Track Policies and Activities
-🧑‍💼 Company
-Register/Login
-Create & Manage Policies
-View Customer and Sales Data
-Analyze Revenue & Trends
-📃 License
-MIT License
-
-💬 Have suggestions or found a bug? Feel free to open an issue or contribute!
+│   └── utils/              # Helper utilities
+└── shared/                 # Shared logic across frontend/backend
+    └── types/              # TypeScript interfaces and types
